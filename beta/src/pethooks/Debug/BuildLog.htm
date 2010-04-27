@@ -1,0 +1,60 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: pethooks, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\pethooks\Debug\RSP000022.rsp" with contents
+[
+/Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_USRDLL" /D "PETHOOKS_EXPORTS" /D "_WINDLL" /D "_MBCS" /FD /EHsc /Yu"stdafx.h" /Fp"Debug/pethooks.pch" /FAcs /Fa"Debug/" /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /ZI /Gd /TP
+".\pethooks.cpp"
+".\inject.cpp"
+".\hook.cpp"
+".\filedialog.cpp"
+]
+Creating command line "cl.exe @"c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\pethooks\Debug\RSP000022.rsp" /nologo"
+Creating temporary file "c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\pethooks\Debug\RSP000023.rsp" with contents
+[
+/Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_USRDLL" /D "PETHOOKS_EXPORTS" /D "_WINDLL" /D "_MBCS" /FD /EHsc /Yc"stdafx.h" /Fp"Debug/pethooks.pch" /FAcs /Fa"Debug/" /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /ZI /Gd /TP
+".\stdafx.cpp"
+]
+Creating command line "cl.exe @"c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\pethooks\Debug\RSP000023.rsp" /nologo"
+Creating temporary file "c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\pethooks\Debug\RSP000024.rsp" with contents
+[
+/OUT:"../../dist/pethooks.dll" /INCREMENTAL /NOLOGO /DLL /NODEFAULTLIB:"libcd" /DEBUG /PDB:"../powerwindow/Debug/pethooks.pdb" /SUBSYSTEM:WINDOWS /IMPLIB:"../powerwindow/Debug/pethooks.lib" /MACHINE:X86 ..\polaris\Debug\polaris.lib psapi.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\polaris\Debug\polaris.lib"
+".\Debug\filedialog.obj"
+".\Debug\hook.obj"
+".\Debug\inject.obj"
+".\Debug\pethooks.obj"
+".\Debug\stdafx.obj"
+]
+Creating command line "link.exe @"c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\pethooks\Debug\RSP000024.rsp""
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+stdafx.cpp
+Compiling...
+pethooks.cpp
+inject.cpp
+hook.cpp
+filedialog.cpp
+c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\pethooks\filedialog.h(11) : warning C4200: nonstandard extension used : zero-sized array in struct/union
+        Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+Generating Code...
+Linking...
+LINK : LNK6004: ../../dist/pethooks.dll not found or not built by the last incremental link; performing full link
+   Creating library ../powerwindow/Debug/pethooks.lib and object ../powerwindow/Debug/pethooks.exp
+LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\pethooks\Debug\BuildLog.htm"
+pethooks - 0 error(s), 2 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

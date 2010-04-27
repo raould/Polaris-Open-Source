@@ -1,0 +1,1324 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0072)http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm -->
+<HTML><HEAD><TITLE>Polaris User's Guide Beta 1.0</TITLE><!-- saved from url=(0071)http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%201.1.htm --><!-- saved from url=(0044)http://web.hpl.hp.com/tmp/b/brokopp/polaris/ -->
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>.style1 {
+	FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.style2 {
+	FONT-SIZE: small
+}
+.style4 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2900.2914" name=GENERATOR></HEAD>
+<BODY>
+<TABLE cellSpacing=0 cellPadding=0 width=650 border=0>
+  <TBODY>
+  <TR>
+    <TD><IMG height=60 src="Polaris User's Guide Beta 1_0_files/header.gif" 
+      width=650></TD></TR>
+  <TR>
+    <TD>&nbsp;</TD></TR>
+  <TR>
+    <TD>
+      <CENTER class=style1>
+      <H2><A name=contents></A>User's Guide for Beta 1.0 </H2></CENTER>
+      
+Copyright 2010 Hewlett-Packard under the terms of the MIT X license
+found at http://www.opensource.org/licenses/mit-license.html
+
+      <H3 class=style1>Table of Contents</H3>
+      <UL class=style1>
+        <LI><A 
+        href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#introduction">Introduction</A> 
+
+        <LI><A 
+        href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#why">Why 
+        Polaris</A> 
+        <LI><A 
+        href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#how">How 
+        Polaris works</A> 
+        <LI><A 
+        href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#install">Installation</A> 
+
+        <LI><A 
+        href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#uninstall">Uninstallation</A> 
+
+        <LI><A 
+        href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#polarizing">Polarizing 
+        applications</A> 
+        <LI><A 
+        href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#using">Using 
+        Polarized applications</A> 
+        <LI><A 
+        href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#diff">Differences 
+        from an Unsafe Desktop</A> 
+        <LI><A 
+        href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#identifying">Identifying 
+        Polarized applications</A> 
+        <LI><A 
+        href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#special">Application 
+        specific instructions</A> 
+        <LI><A 
+        href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#troubleshooting">Troubleshooting</A> 
+
+        <LI><A 
+        href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#limitations">Limitations</A> 
+
+        <LI><A 
+        href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#upgrading">Upgrading 
+        from the Alpha</A> </LI></UL>
+      <H3 class=style1><A name=introduction>Introduction</A></H3>
+      <P class=style1>Polaris (Principle of Least Authority for Real Internet 
+      Security) protects you from viruses that you run, either from email 
+      attachments you open, macro viruses contained in files you edit, programs 
+      you launch, scripts on web pages you visit, or in email you read. This 
+      User's Guide describes the Beta 1.0 release of Polaris. Because it is not 
+      a fully developed product, there are several places where things can be 
+      improved. These future improvements will be noted where appropriate. </P>
+      <P class=style1><A class=style2 
+      href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#contents">Back 
+      to Table of Contents</A> </P>
+      <H3 class=style1><A name=why>Why Polaris</A></H3>
+      <P class=style1>Every program you launch in Windows has the authority to 
+      do anything you can do, even if you don't want it done. That's what 
+      viruses do. They run in programs you launch and do things that you don't 
+      want done. These things include installing spyware, adware, backdoors, and 
+      Trojan horses; modifying the system registry; and mailing themselves to 
+      email addresses found on your machine. </P>
+      <P class=style1>Why is this so? All operating systems in common use today, 
+      not just Windows, decide on what a program can do by looking up the 
+      identity of the person who launched it. This approach makes sense if we 
+      can be sure that the program is operating in that person's best interest, 
+      but viruses show that this assumption is not valid. It is this fundamental 
+      flaw in existing systems that makes it impossible to protect them from 
+      viruses. </P>
+      <P class=style1>Polaris takes a different approach to launching programs. 
+      Each program is launched as if by a user with the minimum set of 
+      authorities the program needs to run. Hence, a virus running in this 
+      program can do very little damage. By adhering to the Principle of Least 
+      Authority, Polaris reduces your vulnerability to viruses. </P>
+      <P class=style1><A class=style2 
+      href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#contents">Back 
+      to Table of Contents</A> </P>
+      <H3 class=style1><A name=how>How Polaris works</A></H3>
+      <P class=style1>You don't need to read this section, but knowing how 
+      Polaris works may help you build a mental model of what's going on. That 
+      mental model may help you identify the cause of a problem and discover 
+      your own workaround. </P>
+      <P class=style1>Polaris protects you by giving each program you launch 
+      only the permissions it needs to do its job. Since it works in a Microsoft 
+      environment, it can't rely on changes to the application or the operating 
+      system. Instead, Polaris changes the way programs are launched. 
+      <BR><BR></P>
+      <CENTER><IMG height=361 alt="How Polaris Works" 
+      src="Polaris User's Guide Beta 1_0_files/PolarisIn5Minutes.gif" width=600> 
+      </CENTER>
+      <P class=style1>When you Polarize an application, you are telling the 
+      system to launch the program with a program called <B>powercmd.exe</B>. 
+      This program uses a variant of the Windows <B>RunAs</B> function that lets 
+      you start a program under a different user account. We call the polarized 
+      application a <EM>Pet</EM>, and each Pet has a separate user account. For 
+      example, a pet you call <B>Excel</B> may have an account named 
+      <B>polass7sAaJDp708</B>. The strange name is picked to be unique among all 
+      users on your machine, which allows different users to assign the same 
+      petname to a given application.</P>
+      <P class=style1>Suppose you have Polarized Excel. When you double click on 
+      a file with an extension of <B>xls</B>, <B>powercmd</B> makes a copy of 
+      the file and starts a program that keeps the copy and the original 
+      synchronized. If your file is <B>c:\temp\data.xls</B>, the copy will be 
+      created with the file name <B>c:\Documents and 
+      Settings\polass7sAaJDp708\Application 
+      Data\Hewlett-Packard\Polaris\editables\c\temp\data.xls</B>. 
+      <B>Powercmd</B> then starts Excel running as if it were launched by the 
+      user <B>polass7sAaJDp708</B>. 
+      <P class=style1>Of course, applications need access to more than just the 
+      file you're working on. They also need to be able to read their libraries, 
+      fonts, <EM>etc</EM>. So, the Pet accounts have an <EM>installation 
+      endowment</EM>, the permissions they get every time they start. This 
+      endowment includes permission to read your <B>c:\Program Files</B> and 
+      <B>c:\Windows</B> directories. The Pet also has read and write permission 
+      to its own account's folders, <B>c:\Documents and 
+      Settings\polass7sAaJDp708</B> in our example, and its subdirectories. In 
+      addition, due to the way the Microsoft Office Suite operates, in this Beta 
+      release all Pets have permission to see the name of every file your file 
+      system. The result of this installation endowment is that malicious code 
+      running in a Pet can read directory and file names, but it can only read 
+      the files in its installation endowment and any files you've opened with 
+      the Pet. Nevertheless, you may want to be circumspect in the names you 
+      choose for files. For example, <B>ATMpin1234</B> is probably not a good 
+      file name.</P>
+      <P class=style1><A class=style2 
+      href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#contents">Back 
+      to Table of Contents</A> <SPAN class=style1></SPAN></P>
+      <H3 class=style1><A name=install>Installation</A></H3>
+      <P class=style1>This Beta release of Polaris does not use a standard 
+      installer. Instead, you run a set up script that creates some registry 
+      entries and two folders. If your userid is <B>alice</B>, these folders are 
+      under <B>c:\Documents and Settings\alice\Application 
+      Data\Hewlett-Packard\Polaris\</B> and are named <B>requests</B> and 
+      <B>editables</B>. You are not given the option of changing the location of 
+      these directories. If you already have directories with these names that 
+      you are using for some other purpose, you must rename them before 
+      installing Polaris. </P>
+      <P class=style1>Polaris was developed and tested on Microsoft Windows XP 
+      Service Pack 2. We don't guarantee that it will work with this or any 
+      other configuration. Some machines are configured in a way that interferes 
+      with Polaris. We will try to help you identify the cause of the problem, 
+      but we may not succeed.</P>
+      <P class=style1>To install Polaris, run <B>setup.bat</B> from your 
+      installation CD or shared drive. This script copies the Polaris software 
+      to <B>c:\Program Files\Hewlett-Packard\Polaris</B>, adds the shortcul 
+      <B>powerwindow.lnk</B> to your startup folder, and starts the PowerWindow. 
+      You are now ready to start Polarizing applications. The script also 
+      configures your file system so that Office applications can find the files 
+      they need. This step can take 10 to 30 minutes depending on how many files 
+      you have. Don't panic. Just start the installation when you're ready to 
+      leave for lunch. 
+      <P class=style1>The most common vector for computer viruses is email 
+      attachments. Polaris provides a means to launch attachments that will 
+      limit the damage that a virus can do. In this Beta release, you must run 
+      <B>setupOutlook.bat</B> to add special buttons to your Outlook windows. 
+      You may have to restart Outlook to see them. When you open Outlook, even 
+      unpolarized Outlook, you'll see a button that looks like a floppy disk 
+      with an arrow coming out of its top. If you mouse over this button, you'll 
+      see a tool tip <B>PolarisLaunch</B>. A similar button will appear on each 
+      email you open. 
+      <CENTER>
+      <P><IMG height=189 alt=Endowments 
+      src="Polaris User's Guide Beta 1_0_files/PolarisLaunch.jpg" width=393> 
+      </P></CENTER>
+      <P class=style1><SPAN class=style1>When you want to open an attachment, 
+      select the message containing the attachment, and click on the 
+      <B>PolarisLaunch</B> button on the Outlook tool bar. If there is only one 
+      attachment, it will open. If there is more than one, you will be given the 
+      option to select the one you want to open. 
+      <P class=style1>If you have created a Pet for the type of attachment, such 
+      as <B>Excel</B> for an <B>xls</B> attachment, Polaris will use that Pet. 
+      If not, Polaris will launch the attachment in the IceBox, a special 
+      account with very few permissions. Many applications won't run in the 
+      IceBox, but those that do won't be able to do much harm. If you don't have 
+      a Pet for the application, and the attachment won't open in the IceBox, 
+      and if you really, Really, REALLY need to open the attachment and you are 
+      really, Really, REALLY sure that it's safe, you can double click on the 
+      attachment or right click on the attachment and select <B>Open</B>. That's 
+      dangerous. A better approach is to save the attachment to disk and open it 
+      from there. Be sure to virus scan the file first, but that won't protect 
+      you if there's an unrecognized virus in the file. </P>
+      <P class=style1><A class=style2 
+      href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#contents">Back 
+      to Table of Contents</A> </P>
+      <H3 class=style1><A name=uninstall>Uninstalling</A></H3>
+      <P class=style1>This Beta release of Polaris does not use a standard 
+      uninstaller, nor can you uninstall Polaris from the Control Panel using 
+      Add/Remove Programs. If you believe that Polaris is causing you problems, 
+      you may want to uninstall it. However, that may not be necessary, since 
+      Polaris doesn't interfere with your normal use of appilications.</P>
+      <P class=style1>If you have information, such as browser bookmarks, that 
+      you want to save, you should move them to a folder in your user account. 
+      That's not strictly necessary for the first option below, but you'll 
+      quickly forget where you left things if you don't. You can find the 
+      account name for the pet by looking at the user <B>User Name</B> in the 
+      <B>Processes</B> tab on the <B>Windows Task Manager</B>. If you have more 
+      than one Pet for the program, make sure the one you want is the only one 
+      that is running. 
+      <P class=style1><B>BEWARE</B>. Malicious code may have corrupted those 
+      files. Be very careful before moving them out of the Pet account. 
+      <P class=style1>There are three things you can do. 
+      <OL class=style1>
+        <LI>Reset the default launch. 
+        <UL>
+          <LI>From <B>Tools</B> on File Explorer, select <B>Folder Options</B> 
+          <LI>Select <B>File Types</B> 
+          <LI>Find the file type you'd like to reset, say <B>XLS</B> 
+          <LI>Click <B>Advanced</B> 
+          <LI>Select <B>Open</B> and click <B>Set Default</B> and <B>OK</B> 
+          <LI>Repeat as needed for other file types </LI></UL>
+        <LI>Depolarize the applications 
+        <UL>
+          <LI>Open the <B>Polarizer</B> 
+          <LI>Select a Pet from the list of Existing Pets 
+          <LI>Click <B>De-Polarize</B> 
+          <LI>Repeat as needed for other pets 
+          <LI>The corresponding accounts will disappear the next time you 
+          reboot. </LI></UL>
+        <LI>Uninstall Polaris 
+        <UL>
+          <LI>Depolarize all pets listed in <B>Existing Pets</B> 
+          <UL>
+            <LI>Open the Polarizer. 
+            <LI>Select a pet from the list of <B>Existing Pets</B>. 
+            <LI>Click <B>De-Polarize</B>. 
+            <LI>Repeat as needed for other pets. </LI></UL>
+          <LI>Remove the PowerWindow from your StartUp folder (substitute your 
+          account name for <B>alice</B> in the following) 
+          <UL>
+            <LI>Navigate to <B>c:\Documents and Settings\alice\Start 
+            Menu\Programs\Startup</B> 
+            <LI>Delete the shortcut <B>powerwindow.lnk</B> </LI></UL>
+          <LI>Reboot the computer. 
+          <LI>If any of the Pet accounts show up in <B>c:\Documents and 
+          Settings</B>, delete them. 
+          <LI>Run <B>regedit</B> 
+          <UL>
+            <LI>From <B>Start</B> select <B>Run ...</B> and type <B>regedit</B>. 
+
+            <LI>Remove <B>My 
+            Computer\HKEY_CURRENT_USER\SOFTWARE\HEWLETT-PACKARD\POLARIS</B>. 
+            </LI></UL>
+          <LI>Delete the folder <B>c:\Program Files\Hewlett-Packard\Polaris</B> 
+          <LI>Delete the folder <B>c:\Documents and Settings\alice\Application 
+          Data\Hewlett-Packard\Polaris</B> </LI></UL>
+        <LI>Congratulate yourself on completing the uninstall, but be extra 
+        careful because you're no longer protected. </LI></OL>
+      <P class=style1><A class=style2 
+      href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#contents">Back 
+      to Table of Contents</A> </P>
+      <H3 class=style1><A name=polarizing>Polarizing applications</A></H3><SPAN 
+      class=style1></SPAN>
+      <P class=style1>After installing Polaris, you will have an icon on your 
+      desktop labeled <B>Polarizer</B>. Launching this program brings up a 
+      window that lets you set up applications to be safe from viruses. Each 
+      instance of such a safely <EM>tamed</EM> application is called a 
+      <EM>Pet</EM>. <BR><BR></P>
+      <CENTER><IMG height=394 alt="Polarizer Window" src="" width=590> </CENTER>
+      <P class=style1>There are two lists in the Polarizer window, <B>Existing 
+      Pets</B> and <B>Pet Templates for Known Applications</B>. Initially, the 
+      list of <B>Existing Pets</B> is empty. You may start by selecting one of 
+      the known applications or by typing in the information yourself. The 
+      <B>Petname</B> can be anything you like as long as it doesn't contain 
+      white space. The Polarizer will create a shortcut for this pet after 
+      adding the string <B>Safe</B> to the end of the name you chose. </P>
+      <P class=style1>Say that you want to be able to use Excel macros safely. 
+      Select <B>Excel</B> from the list of Known Apps. You will see that the 
+      <B>Default File Extensions</B> contains <B>xls</B> and <B>xlt</B>. If you 
+      don't change this setting, you will be able to launch this Pet by double 
+      clicking on the icon for files with either of these extensions. The 
+      <B>Path to Executable</B> has been set to point to a likely place to find 
+      the program the Pet will run. Simply type over this value or use the 
+      <B>Browse</B> button to find the executable. 
+      <P class=style1>The <B>Configure</B> and <B>Configure Network 
+      Authentication</B> buttons let you change some settings that are described 
+      later. You may ignore them for most Windows applications. The <B>Update 
+      Existing Pet Endowments</B> button lets you easily correct any mistakes. 
+      So, if you decide that you don't want the Excel Pet to launch for files of 
+      type <B>xlt</B>, simply select <B>Excel</B> from the list of <B>Exisiting 
+      Pets</B>, remove <B>xlt</B> from the list of <B>File extensions</B>, and 
+      click this button. You may also use this button to change the any of the 
+      options on the <B>Endowments</B> window without repolarizing the 
+      application. 
+      <P class=style1>If the application you want to Polarize isn't on the list 
+      of Known Apps, you can still Polarize it. Just fill in the <B>File 
+      Extensions</B> and the <B>Path to Executable</B>. If you don't know the 
+      path, then you can browse for it. You'll have to think up your own Petname 
+      without any hint from the Polarizer.</P>
+      <P class=style1>When the information is to your liking, click the 
+      <B>Polarize</B> button. It should take less than 30 seconds to set up your 
+      Pet. Be patient. In this Beta release, the icon won't change to an hour 
+      glass, but progress is being made. 
+      <P class=style1>The polarizer will put an icon on your Desktop with a 
+      label <B>ExcelSafe</B> if <B>Excel</B> is the name you've chosen for the 
+      Pet. It will also create a user account with a name made up of three 
+      parts. 
+      <P class="style 1"><B>Warning!!! Warning!!! Warning!!! Geek talk. Take 
+      Precautions!!!</B> 
+      <UL class=style1>
+        <LI>The first part will always be <B>pola</B>. That way all Pets will 
+        appear close to each other in a sorted list of user accounts. 
+        <LI>The second part is seven characters that should be unique to the 
+        user who created the Pet. That way all the Pets created by a given user 
+        will appear close to each other in a sorted list of user accounts. 
+        <LI>The third part is an integer that is incremented each time you 
+        create a Pet. These numbers are never reused unless you uninstall and 
+        reinstall Polaris. That assures that there will be no confusion between 
+        an existing Pet and one that you deleted. </LI></UL>
+      <P class="style 1"><B>End geek talk. You may now return to your regularly 
+      scheduled reading.</B> 
+      <P class=style1>You will get a folder in <B>c:\Documents and Settings</B> 
+      with this name, as well. When Polarization is complete, you'll be asked if 
+      you want to Polarize another application. 
+      <H4 class=style1>Verifying Installation and Polarization</H4>
+      <P class=style1>You are now ready to test the installation. Polarize Excel 
+      by selecting it from the <B>Pet Templates for Known Applications</B> on 
+      the Polarizer window. Select <B>Excel</B>. If you're using a different 
+      version, you'll have to use the <B>Browse</B> button to find the 
+      executable. It will probably be in <B>c:\Program Files\Microsoft 
+      Office\Officexx\excel.exe</B>, where <B>xx</B> is the version you are 
+      using. Next, click <B>Polarize</B>. When the polarization is complete, you 
+      should exit the Polarizer. 
+      <P class=style1>You can now check that your installation succeeded by 
+      running the Polaris demo. The installation procedure for Polaris added a 
+      file named <B>killer.xls</B> to your <B>My Documents</B> folder. This 
+      spreadsheet uses some time travel technology to calculate, not predict, 
+      the value of a stock portfolio 10 years in the future. A lot of people 
+      would be very interested in running such a spreadsheet, but it contains a 
+      virus that we wrote. 
+      <P class=style1>Before you can run the demo, you need to configure your 
+      macro security settings. 
+      <UL class=style1>
+        <LI>Open unpolarized Excel from the <B>Start Menu</B> under <B>All 
+        Programs</B>. 
+        <LI>If it is running unpolarized, you will not see 
+        <B>&lt;&lt;&gt;&gt;</B> in the title bar of the Excel window. 
+        <LI>Select <B>Tools-Macro-Security</B>. 
+        <LI>Set the Security Level to Medium. 
+        <LI>Close Excel 
+        <LI>Open your Excel Pet using the shortcut the Polarizer put on your 
+        desktop. 
+        <LI>Verify that Excel is running polarized by looking for 
+        <B>&lt;&lt;Excel&gt;&gt;</B> in the title bar of the Excel window. If 
+        you used a different petname, then that name will appear between the 
+        angle brackets. 
+        <LI>Select <B>Tools-Macro-Security</B>. 
+        <LI>Set the Security Level to Low. The text next to that selection 
+        recommends against using this setting, but that warning is for Excel not 
+        running under Polaris. 
+        <LI>Close your Excel Pet. 
+        <LI>Make sure you have some shortcuts on your desktop. If you don't have 
+        any, then 
+        <UL class=style1>
+          <LI>Open File Explorer. 
+          <LI>Right click on any file and select <B>Create Shortcut</B>. 
+          <LI>Drag the shortcut to your Desktop. 
+          <LI>Repeat as necessary. </LI></UL></LI></UL>
+      <P class=style1>Now that the one-time setup is complete, you're ready to 
+      amaze your friends and neighbors. First, you'll show them what a virus can 
+      do if you don't use Polaris. 
+      <OL class=style1>
+        <LI>Right click on the icon for <B>killer.xls</B> and select 
+        <B>Open</B>. 
+        <LI>Point out the annoying dialog box and click <B>Enable</B>. 
+        <LI>Verify that Excel is not running in a Pet by pointing out the 
+        absence of <B>&lt;&lt;&gt;&gt;</B> in the title bar. 
+        <LI>Enter a value representing your current investment in HP and click 
+        <B>Compute HP 10-year value</B>. 
+        <LI>Enter a value representing your current investment in Microsoft and 
+        click <B>Compute Microsoft 10-year value</B>. 
+        <LI>A very scary window will appear, but don't worry. Just click 
+        <B>Destroy</B>. 
+        <LI>The virus we wrote appears to delete all the shortcuts on your 
+        Desktop. If this had been a real virus, you'd be in a lot of trouble. In 
+        fact, the virus only moved your shortcuts to <B>c:\trash</B>. You can 
+        copy them back to your Desktop. 
+        <UL class=style1>
+          <LI>In File Explorer, navigate to <B>c:\trash</B>. 
+          <LI>Click on one of the files in the right pane and type <B>CTL-A</B> 
+          to select all files. 
+          <LI>Drag the selected items to your Desktop </LI></UL>
+        <LI>Close Excel, and click <B>No</B> when asked if you want to save your 
+        changes. </LI></OL>
+      <P class=style1>Here's what happened. When you told Windows to open 
+      <B>killer.xls</B>, it started Excel and sent the running program the 
+      string <B>"killer.xls"</B>. Excel then used that string to open the file. 
+      Since the process running Excel could have been given any string, it 
+      needed permission to open any file you could open, including all the 
+      shortcuts on your Desktop. 
+      <P class=style1>Now do the same thing with Polaris. 
+      <OL class=style1>
+        <LI>Open <B>killer.xls</B>. You can double click on the icon for the 
+        file, drag the icon to the shortcut labelled <B>ExcelSafe</B>, or right 
+        click on the icon and select <B>OpenSafe</B>. 
+        <LI>Point out that you didn't have to deal with an annoying dialog box. 
+        <LI>Verify that Excel is running in a Pet by looking for 
+        <B>&lt;&lt;Excel&gt;&gt;</B> in the title bar. 
+        <LI>Enter a value representing your current investment in HP and click 
+        <B>Compute HP 10-year value</B>. 
+        <LI>Enter a value representing your current investment in Microsoft and 
+        click <B>Compute Microsoft 10-year value</B>. 
+        <LI>That very scary window will appear, but this time it won't be so 
+        scary. The list of files to be destroyed is empty. Click <B>Destroy</B>. 
+
+        <LI>The virus is happy, and so are you. </LI></OL>
+      <P class=style1>You just saw something pretty amazing. Under Polaris, 
+      Excel is more functional, because you can safely use macros, easier to 
+      use, because you're not bothered with security dialog boxes, and more 
+      secure, because the virus didn't hurt you. Many people would have you 
+      believe that you'd have to pick two out of three. 
+      <P class=style1>The reason you get all three is that Polaris enforces the 
+      Principle of Least Authority at the granularity of individual 
+      applications. When Polaris starts the Pet, it starts it with permission to 
+      edit none of your files and adds the ability to edit the one file you just 
+      selected. That's why the virus didn't eat up your Desktop. Excel didn't 
+      need permission to delete your shortcuts, so Polaris didn't give it that 
+      permission. 
+      <H4 class=style1>Multiple Pets for One Application</H4>
+      <P class=style1>In this Beta release, each Pet has permission to read and 
+      write any files opened by that Pet. So, if you've opened one spreadsheet 
+      received as spam and another spreadsheet containing critical information, 
+      a virus running in the spam spreadsheet could destroy the information in 
+      the critical file. You have two ways to prevent this attack, 
+      <OL class=style1>
+        <LI>Close all running instances of the Pet. 
+        <UL class=style1>
+          <LI>Verfify that you didn't miss any. 
+          <UL class=style1>
+            <LI>Right click on the Polabear icon in your system tray. 
+            <LI>Select <B>Kill</B>. 
+            <LI>Click on the name of your Pet if it appears in the list. 
+          </LI></UL></LI></UL>
+        <LI>Create more than one Pet for the applicaton. 
+        <UL class=style1>
+          <LI>Polarize the application with one Petname, say 
+          <B>ExcelforSecrets</B>. 
+          <LI>Polarize the application with another Petname, say 
+          <B>ExcelforSpam</B>. </LI></UL></LI></OL><SPAN class=style1>Only one of 
+      them can be set to launch automatically when double clicking on the icon 
+      for a file with an extension of <B>xls</B>, but you can always drag the 
+      icon for a file to the shortcut for the Pet you want to use. 
+      <P class=style1>Another application you might want several Pets for is 
+      your browser. You can have one Pet for browsing sites you trust, such as 
+      your bank and your stock broker. This Pet can safely remember your 
+      passwords, and you can save files you'd like to keep private in the 
+      browser's directory. You can have a second Pet for browsing sites you 
+      don't trust as much. This Pet won't have access to anything you've put 
+      into the first Pet. You'll probably want a third browser Pet if you use 
+      your browser to read files. Simply configure this one to launch when you 
+      open an HTML file. This way you can use your browser to read files, but 
+      scripts on web pages you visit won't have access to them. </P>
+      <P class=style1>There's one thing you need to be aware of if you have more 
+      than one Pet for an application. Some applications lock a file when they 
+      open it. If you try to open it again, you get a read only version. Polaris 
+      doesn't lock the file. However, if you open it outside a Pet, a 
+      <B>Save</B> of that file in the Pet fails. You'll have to do a 
+      <B>SaveAs</B> to save the Pet's copy. The problem is that two Pets that 
+      open the same file can both do a <B>Save</B>. That might be a problem, so 
+      be careful. At any rate, it's no worse than using an application that 
+      doesn't lock the file. 
+      <H4 class=style1><A name=repolarize>Re-Polarization</A></H4>
+      <P class=style1>There may be times when you want to re-polarize an 
+      application. The simplest thing to do is start over from scratch, but that 
+      loses any customizations, such as tool bars you added and menus you moved 
+      around, that differ from what's on the version of the application that 
+      runs in your account. The most common problem is losing your browser 
+      Favorites/Bookmarks when you re-polarize. When you click the 
+      <B>Polarize</B> button with a Petname that appears in the list of 
+      <B>Existing Pets</B>, you'll see the following window. <BR><BR>
+      <CENTER><IMG alt="Polarizer Window" 
+      src="Polaris User's Guide Beta 1_0_files/repolarize.jpg"> </CENTER>
+      <P class=style1>If you didn't mean to use that name, click <B>Cancel</B>, 
+      and try again. If you haven't done a lot of customization, you should 
+      select <B>Polarize from Scratch</B>. This option is the safest because it 
+      creates a brand new user account. That means that any detritus left lying 
+      around by malicious code in the Pet account will be deleted. It also means 
+      that any settings, such as browser Favorites/Bookmarks or toolbar settings 
+      that are specific to the Pet will be lost. You can keep them by clicking 
+      <B>Re-Polarize</B>. You'll get a new Pet account, but your settings will 
+      be copied from the old one. Now you'll have your configuration, but you 
+      may also have settings made by potentially malicious code, such as a home 
+      page that you'd rather your children didn't see. How long re-polarizing 
+      takes depends on how much customization you've done. It shouldn't take 
+      more than a minute or so. 
+      <H4 class=style1><A name=netauth>Network Authentication</A></H4>
+      <P class=style1>Some sites on the network need to know who you are before 
+      you can use them. Windows passes your login information, but not your 
+      password, to these programs, so you don't have to type your password over 
+      and over. That information is also used when you use a printer on the 
+      network that is controlled by an authenticating print server. 
+      <P class=style1>Your Pets don't run with your identity, so that doesn't 
+      work for polarized applications that access these sites. You can tell 
+      Polaris to provide this authentication by clicking <B>Configure Network 
+      Authentication</B> on the main Polarizer window, which will bring up the 
+      following window. <BR><BR>
+      <CENTER><IMG alt="Polarizer Window" 
+      src="Polaris User's Guide Beta 1_0_files/netauth.jpg"> </CENTER>
+      <P class=style1>You have three options. If you select <B>No 
+      Authentication</B>, any password Polaris has remembered for you will be 
+      forgotten. <EM>(NB: The following option isn't working right now. We'll 
+      remove this warning once it is.)</EM> Selecting <B>Request Password At 
+      Boot</B> means that you will have to provide your login password every 
+      time the PowerWindow starts. Normally, that will only happen when you 
+      login, so it shouldn't be too much of a burden. The password you provide 
+      will be stored in an encrypted file if you select <B>Store Password</B>. 
+      <P class=style1>You don't have to worry about your password being stolen. 
+      Polaris uses EFS, the Windows Encrypted File System, which computes an 
+      encryption key based on your login password. Only someone who knows your 
+      login password or is running a program as you can decrypt this file. To 
+      protect you further, your password is encrypted with itself as the 
+      encryption key. Hence, a scan of your disk won't reveal your password. On 
+      the other hand, a virus running in your account will be able to get your 
+      password. Of course, such a virus has lots of other ways to capture your 
+      password and do lots of other nasty stuff. 
+      <P class=style1>You will have to return to this window if you change your 
+      login password. Of course you don't have to worry about forgetting. All 
+      your network authentications will fail until you do. In this Beta release, 
+      you will need to restart the PowerWindow after changing your password. 
+      Right click on the PowerWindow icon in your system tray and select 
+      <B>Exit</B> to close all running Pets and the PowerWindow. Your new 
+      password will be in effect when you restart the PowerWindow. 
+      <H4 class=style1>Additional Authorities</H4>
+      <P class=style1>The Polarizer does a pretty good job setting up the 
+      permissions for a Pet. However, there will be times when a Pet will need 
+      additional authority. That's what the <B>Endowments</B> are for. Click the 
+      <B>Configure</B> button to see what you can do. 
+      <CENTER>
+      <P><IMG alt=Endowments src=""> </P></CENTER>
+      <P class=style1>We'll start at the top of the Endowments window and 
+      explain the items one by one. 
+      <P class=style1><B>Server Sites to Automatically Authenticate:</B> Every 
+      program running in a Window's process has an authentication token. That's 
+      how Windows knows what permissions the process has. This token is also 
+      passed to network sites so they can know what permissions to grant. If you 
+      use a network shared drive, your token tells the machine what files you 
+      can read and/or write. Web sites on the Intranet also use the token so you 
+      don't have to keep logging in. 
+      <P class=style1>When you run a Pet, the process doesn't have your token. 
+      Instead, it has a token for the Pet account, which isn't known to other 
+      machines. Hence, the Pet doesn't have permission to access any resources 
+      on these machines. That's a GOOD THING. It means that a virus running in a 
+      Pet can't damage resources on other machines. It can also be inconvenient 
+      if you have to keep logging into a few sites over and over. 
+      <P class=style1>Fortunately, it's possible to attach the part of your 
+      token used for network access to the Pet's token. This section of the 
+      <B>Endowments</B> window allows you to specify those servers you want to 
+      recognize your pets as you. Doing so can be dangerous because a virus 
+      running in the Pet will have all of your authority on these servers and 
+      will be able to do anything you can do. However, the convenience may 
+      outweigh the risk, particularly if you only have read access to the data 
+      on these servers. Just fill in the domain names for each such site in the 
+      form <B>server.company.com</B>. <EM>NB: We are having inconsistent results 
+      with this feature. We think our corporate servers are doing a hand-off to 
+      servers we don't know about. Please let us know how well it works for 
+      you.</EM> 
+      <P class=style1>You will also need to provide your network authentication 
+      so that Polaris can add your network token to the Pet. You do that by 
+      clicking on the <A 
+      href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#netauth"><B>Configure 
+      Network Authentication</B></A> button on the main Polarizer window. 
+      <P class=style1><B>Additional Applications to run in this Pet:</B> There 
+      are times you want to run applications together. A common case is when you 
+      want to include a spreadsheet in a document. You can run Microsoft Word in 
+      the Excel Pet account. Simply provide the path to the executables you want 
+      to run in that account. There's no <B>Browse</B> option in this Beta 
+      release, so you'll just have to find the executable and enter the path 
+      directly. 
+      <P class=style1>When you polarize the application, you'll get a shortcut 
+      for the Pet, say <B>ExcelSafe</B>, and one for each application that will 
+      run in the pet, say <B>Excel-WordSafe</B>. This convention was chosen to 
+      put Pets that run in the same account close to each other in a sorted list 
+      of shortcuts. 
+      <P class=style1>Note that you may not need to use this option very often. 
+      If you are running Excel in a Pet and cause it to open Microsoft Word, 
+      Word will open in the Excel Pet account. However, you may find times when 
+      that doesn't work. For example, if you polarize your email client, you'll 
+      want the program that runs the synchronizer for your PDA to run in that 
+      pet. 
+      <P class=style1><B>Read-Only:</B> Some applications use collections of 
+      files. The most common case is the browser, but it's special, so there's a 
+      separate check box elsewhere. A less common case is when you have a 
+      document that uses figures stored in some folder. If you open the document 
+      in a Pet, it won't have access to those files. Simply fill in the paths to 
+      the folders you want the Pet to have read access to. Be careful. The Pet 
+      will be able to read any file in the folder and subfolders. 
+      <P class=style1><B>Read-Write:</B> Some applications need to be able to 
+      modify a collection of files. The most common case is a spreadsheet with 
+      links to other files. If you open the spreadsheet in a Pet, it won't have 
+      access to those files. Simply fill in the paths to the folders you want 
+      the pet to have read/write access to. Be careful. The Pet will be able to 
+      modify any file in the folder and subfolders. 
+      <P class=style1><B>Command Line Arguments:</B> Some programs allow you to 
+      specify runtime parameters in addition to the name of a file. Specify them 
+      exactly as you would on a command line. 
+      <P class=style1><B>Check Boxes:</B> There are five check boxes on the 
+      <B>Endowments</B> window. Each of them deals with a different, commonly 
+      occuring special case. 
+      <UL>
+        <LI class=style1><B>Set as Default Web Browser:</B> When you click on a 
+        web link in an email or in a document, Windows launches your default 
+        browser. You want that browser to be a Pet, so you check this box when 
+        polarizing your browser. Some software installations reset the default 
+        to be unpolarized Internet Explorer. You can undo this change by 
+        polarizing your browser again. Be sure to save your bookmarks before 
+        re-polarizing unless you use the medium risk option explained at <A 
+        href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#repolarize">Re-Polarization</A> 
+
+        <LI class=style1><B>Set as Default Mail Client:</B> (NB: This option is 
+        not yet working. We'll remove this warning once it is.) Many people 
+        depend on their email and don't want to risk losing productivity by 
+        polarizing their mail client. That's a wise policy, but it can be 
+        dangerous. There have been several attacks that get launched when you 
+        open or even preview a message. We've found that Outlook can be used 
+        effectively in a Pet. However, some functions, such as sending an email 
+        from your browser or Microsoft Word won't work unless you check this 
+        box. 
+        <LI class=style1><B>Allow Read/Write of Windows Temp folders:</B> Some 
+        applications make changes in the Windows temp folder, which is usually 
+        <B>c:\tmp</B> or <B>c:\temp</B>. You can tell which name to use for sure 
+        by opening a command window and typing <B>echo %TEMP%</B>. Such programs 
+        violate Microsoft recommendations, but they are not rare. Clicking this 
+        box gives the Pet write permission to your temp folder and all its 
+        subfolders. Granting this permission may be dangerous if you store 
+        install programs in this folder. Malicious software running in a pet 
+        with this permission could replace one of those programs with a Trojan 
+        Horse that could end up running with administrator privileges. 
+        <LI class=style1><B>Allow editing the application execution folder:</B> 
+        Some applications make changes in the folder containing the executable 
+        of the program being run, which is usually in <B>c:\Program Files</B>. 
+        Such programs violate Microsoft recommendations, but they are the 
+        primary reason you need to run with administrator privileges to get your 
+        job done. Clicking this box gives the Pet write permission to the folder 
+        containing the executable program and all its subfolders. This folder is 
+        the one in the path name you specified in the main Polarizer window. 
+        Granting this permission is dangerous, albeit far less dangerous than 
+        granting write permission to all of <B>c:\Program Files</B>, but it's 
+        the best you can do if you want to run the program. 
+        <LI class=style1><B>Read Only With Links:</B> Some programs need access 
+        to other files in the folder of the file being used and files in its 
+        subfolders. We say these files are <B>linked</B> to the file you open. 
+        The primary example is a browser Pet used to display files stored on 
+        your disk. The graphics for the web page are often stored in a 
+        subdirectory with a name related to the name of your file. So, if your 
+        file is named <B>c:\My Documents\myPage.htm</B>, its graphics are most 
+        likely in <B>c:\My Documents\myPage_files</B>. If you simply open a 
+        browser Pet to read the file, you won't see the graphics because the Pet 
+        won't have permission to read files in the subdirectory. Normally, 
+        Polaris makes a copy of a file when it is being edited by a Pet. That 
+        would require copying an entire folder hierarchy for a web page to be 
+        viewed properly. However, a browser doesn't modify the file, so Polaris 
+        avoids this overhead by granting the Pet read permission to folder 
+        containing the file and its subfolders. Of course, if the person opening 
+        the file doesn't have authority to grant this permission, such as when 
+        the file is on a network share, then Polaris does make a copy. 
+        <LI class=style1><B>Grant Full Network Credentials:</B> Selecting this 
+        option is equivalent to granting this Pet access to everything you can 
+        do on the network. A virus running in this Pet's account won't be able 
+        to do much harm to your machine, but it might be able to do a lot of 
+        damage to other machines you access. Be very careful which Pets get this 
+        endowment. 
+        <LI class=style1><B>Do Not Shut Down App When Windows All Closed:</B> 
+        Normally, Polaris cleans up the Pet account when last visible window 
+        running in the Pet is closed. Polaris kills all processes running in 
+        that Pet, which prevents a virus from staring a long running program. 
+        Polaris also shuts down the file synchronizers and deletes the Pet's 
+        copies of any files you opened. That relieves you of worrying what data 
+        a virus running in the Pet might see. Unfortunately, this cleanup closes 
+        service routines that you may want to leave running. Check this box to 
+        bypass the cleanup. If you do need to force a clean up, you can right 
+        click on the <B>PowerWindow</B> icon in your system tray, mouse over 
+        <B>Kill</B>, and select the Pet you want closed. </LI></UL>
+      <P class=style1><A class=style2 
+      href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#contents">Back 
+      to Table of Contents</A> </P>
+      <H3 class=style1><A name=using>Using Polarized applications</A></H3>
+      <P class=style1>You use Polarized applications exactly as you would any 
+      other program (except you can't drag/drop between Pets). Either launch the 
+      program from the shortcut, drag a document onto the shortcut, or double 
+      click on the icon for a file with the appropriate extension. 
+      <P class=style1>Your Pet will take a few additional secconds to start the 
+      first time you use a Pet after a reboot or when the Pet hasn't been used 
+      for a long time. Don't panic. Windows has to load the Pet's account 
+      information into the registry. Microsoft didn't optimize that path because 
+      they assumed it would only be needed at login. Most applications start in 
+      10 seconds or less. However, we have seen delays as long as 30 seconds if 
+      a disk intensive program, such as a virus scanner, is running. Once the 
+      registry information is loaded, subsequent launches of the application 
+      will not incur any additional delay. 
+      <P class=style1>Polaris doesn't interact with your program in any way once 
+      it is running except for accessing other files. Any time you need to 
+      designate a file, such as with <B>Open</B> or <B>SaveAs</B>, you will see 
+      a file dialog box presented by Polaris. Because of the way this Beta 
+      release operates, you may see another dialog box flash momentarily on your 
+      screen before the Polaris file dialog opens and just after it closes. 
+      Also, in this Beta release the Polaris file dialog box may sometimes be 
+      under another window. Often, clicking the icon for the Pet in the task bar 
+      will make the dialog visible. If that doesn't work, hitting <B>ESC</B> 
+      cancels the request and returns control to the application. 
+      <P class=style1>There will also be times when you see two dialog boxes. 
+      The one labeled <B>&lt;&lt;petname&gt;&gt; Open</B>, where <B>petname</B> 
+      is the name of the Pet requesting access to the file, is running with the 
+      Pet's permissions. The one labeled <B>Open for &lt;&lt;petname&gt;&gt;</B> 
+      is the one you want to use since it has all your permissions. This label 
+      is very important. A file dialog box from an unpolarized application has a 
+      title <B>Open</B>, which gives you no indication of what application is 
+      requesting access. With Polaris, you know exactly which Pet will be 
+      getting access to the file. 
+      <P class=style1>Sometimes a failure occurs that might cause a loss of 
+      data, such as when you close the PowerWindow while a Pet is open. In such 
+      cases, Polaris saves the version from the Pet account area in a folder on 
+      your Desktop named <B>PolarisRecover</B>. You'll have to figure out if the 
+      version in that folder is the one you want. 
+      <P class=style1>You may encounter situations where you can't get your work 
+      done, apparently because of some strange behavior you think may be due to 
+      Polaris. Since you're using the Beta release, you may well be right. You 
+      may also be wrong. It could be a problem with Windows, or <B>it could be 
+      that a virus has attacked the application and is struggling to get out to 
+      attack you</B>, which has happened in our existing pilot program with the 
+      Alpha release. A virus not detected by Symantec AntiVirus corrupted a Pet, 
+      but could not corrupt the system. 
+      <P class=style1>It is possible to open the application the unsafe way, but 
+      before you go to this extreme, start the Polarizer and Polarize the 
+      application again under a new Petname. If the new Pet has the same 
+      behavior on a different file, it is probably not a virus. (The virus 
+      should be trapped in the original Pet). If the new Pet doesn't work 
+      either, you can see if it is a Polaris problem by opening the program the 
+      unsafe way. If you're opening the program directly, simply double click on 
+      the shortcut for the unsafe application (Found under <B>All Programs</B> 
+      under the <B>Start</B> button). If you're opening the program by double 
+      clicking on the icon for a file, then right click the document icon and 
+      select <B>Open</B> instead of the <B>OpenSafe</B> default. At this point 
+      you'll be as vulnerable as you were before you installed Polaris. When you 
+      find out that the problem isn't related to Polaris, you can go back to 
+      using the Pet. </P>
+      <P class=style1><A class=style2 
+      href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#contents">Back 
+      to Table of Contents</A> </P>
+      <H3 class=style1><A name=diff>Differences from an Unsafe Desktop</A></H3>
+      <P class=style1>We have worked hard to make using Polaris identical to 
+      using an unsafe Windows XP environment. We haven't completely succeeded, 
+      but we've come close. There are no differences for non-Polarized 
+      applications. The differences for Polarized applications are: </P>
+      <UL class=style1>
+        <LI>Some Windows applications lock a file when you edit it. That means 
+        that you can only open it for reading while it is locked. Polaris does 
+        not lock the original file when you open it in a Pet. That means you can 
+        open it for writing outside the Pet. Don't worry. You won't be able to 
+        clobber your data. If you try to save a file that's been opened twice, 
+        the Pet will tell you to do a <B>SaveAs</B>. There is one exception. If 
+        the file is opened simultaneously in more than one Pet, you can get in 
+        trouble even if the application normally locks the file. 
+        <LI>Drag and drop to running Pets doesn't work. However, you can drag 
+        and drop onto the shortcut for a Pet or between windows running in a 
+        Pet. 
+        <LI>File dialog boxes have buttons along the left side and a pulldown 
+        menu at the top. The <B>Desktop</B> entry at the top of the pulldown 
+        points to the Pet account, not yours. 
+        <LI>Some extra logins are required when running from a Polarized browser 
+        unless you've configured your network authentication for those sites. 
+        <LI>Polaris doesn't detect non-standard file dialog boxes, such as those 
+        produced by some Java applications. You may not want to polarize these 
+        programs. 
+        <LI>Some extra steps are needed for editable, linked files. For example, 
+        you may need to grant read only or read/write permission using the 
+        <B>Endowments</B> window. 
+        <LI>Some classes of applications, mostly games using advanced graphics, 
+        won't run Polarized. 
+        <LI>Some ActiveX controls, in particular the one that launches 
+        MacroMedia Flash, don't work in polarized Internet Explorer. We are 
+        actively investigating this problem. In the interim, if you need Flash, 
+        say to watch a baseball game on MLB.com, use Firefox or your unpolarized 
+        Internet Explorer. 
+        <LI>You won't be able to open files using the application's list of 
+        recently used files, either from the File menu or from the task pane. 
+        That's because Polaris can't tell if it's you asking or a virus running 
+        in the Pet. Instead, use <B>My Recent Documents</B> from the 
+        <B>Start</B> menu. <EM>NB: We have a partial solution to this problem. 
+        Let us know if this feature is very important to you.</EM> </LI></UL>
+      <P class=style1>Other that this relatively short list, everything should 
+      work the way it always has, except that you don't have to worry about 
+      viruses. In fact, in some ways Polaris makes your machine easier to use. 
+      </P>
+      <UL class=style1>
+        <LI>You can configure your settings to reduce the number of security 
+        related dialog boxes presented to you. 
+        <LI>You can safely use functions that are too dangerous in a non-Polaris 
+        machine, such as macros, web scripting, and launching email attachments. 
+
+        <LI>You can move or rename a file while you are editing it. </LI></UL>
+      <P align=left><A class=style2 
+      href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#contents">Back 
+      to Table of Contents</A> </P>
+      <H3 align=left><A class=style1 name=identifying>Identifying Polarized 
+      applications</A></H3>
+      <CENTER></CENTER>
+      <P class=style1>When the PowerWindow is running, it labels each window 
+      with the name of the Pet associated with it. So, windows running in your 
+      <B>Excel</B> Pet will have the label <B>&lt;&lt;Excel&gt;&gt;</B>. If the 
+      application is not running Polarized, the <B>&lt;&lt;&gt;&gt;</B> is 
+      absent. If you don't see this prefix on your Pets, it means you have to 
+      restart your PowerWindow. Since the PowerWindow doesn't reconnect to Pets 
+      that were running when it crashed, you should close any running Pets 
+      first. Note that we have not observed any crashes of the PowerWindow in 
+      our internal testing of this version. 
+      <P class=style1>You can make a more visibly striking but less reliable 
+      indication by using a poorly understood feature of Windows. Most 
+      applications use the new XP windows style with rounded corners. Polarized 
+      applications run with the old style windows that have sharp corners. If 
+      you change the color of the title bar, the change will apply only to old 
+      style windows. To make this change </P>
+      <UL class=style1>
+        <LI>Right click on the desktop and select <B>Properties</B>. 
+        <LI>Select <B>Appearance</B>. 
+        <LI>Click <B>Advanced</B>. 
+        <LI>Click on <B>Active Window</B> in the upper area. 
+        <LI>Select <B>Color 1</B> and <B>Color 2</B> to your liking. 
+        <LI>Click <B>OK</B> 
+        <LI>Repeat for the <B>Inactive Window</B> and <B>Message Box</B>. 
+        <LI>Click <B>OK</B> when you are done. </LI></UL>
+      <CENTER class=style1>
+      <P><IMG height=503 alt="Setting Appearance" 
+      src="Polaris User's Guide Beta 1_0_files/appearance.gif" width=460> </P>
+      <P align=left><A class=style2 
+      href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#contents">Back 
+      to Table of Contents</A> </P></CENTER><SPAN class=style1></SPAN>
+      <H3 class=style1><A name=special>Special instructions for specific 
+      applications</A></H3>
+      <P class=style1>This section contains instructions that are specific to 
+      individual applications. </P>
+      <H4 class=style1><A name=adobe>Adobe Reader:</A></H4>
+      <P class=style1>By default, all PDF documents open in the same running 
+      instance of the Reader, even if they're opened by different users. That's 
+      pretty bizarre, but most personal computers only have one user, so you 
+      never notice it. Even more surprising is the behavior when you have 
+      previously read a PDF in your browser. Adobe Reader uses that instance 
+      even if you open the file from your Desktop. 
+      <P class=style1>The bad part is that this behavior can prevent you from 
+      using your Acrobat Pet. Say that you've opened a PDF document that you 
+      wrote. You know that's safe, so you opened it in your account. Next you 
+      open a PDF email attachment. That might not be safe. Since you're a savvy 
+      Polaris user, you'd like that document to open in a Pet. Adobe Reader 
+      doesn't want to do that. The Pet process starts, sees that there is a 
+      process running Reader, and sends a Windows message to that process to 
+      open the file. That message doesn't get through. That's a GOOD THING. 
+      Allowing such Windows messages from the Pet to your account would let a 
+      virus do anything you can do. Too bad for you. The document never opens. 
+      <P class=style1>Fortunately, there's an undocumented flag for Adobe 
+      Reader, <B>/n</B>, that tells the launcher to use a new instance each time 
+      Reader is run. To change this behavior, 
+      <UL class=style1>
+        <LI>Select <B>Folder Options</B> from the <B>Control Panel</B>. 
+        <LI>Select <B>File Types</B> and highlight <B>PDF</B>. 
+        <LI>Select <B>Advanced</B> and highlight <B>Open</B>. 
+        <LI>Change the <B>"Application used to perform action:"</B> by replacing 
+        <B>"%1"</B> with <B>/n "%1"</B>. 
+        <LI>Click <B>OK</B> twice. </LI></UL><SPAN class=style1>These arguments 
+      are inserted automatically if you use the entry in the <B>Known Pets</B> 
+      list. Adding this option to the <B>Open</B> command lets you run an unsafe 
+      Reader even if you have a safe Pet running. </SPAN>
+      <P class=style1>This behavior also causes problems if you open PDFs by 
+      clicking on links in your browser. By default, Adobe Reader runs in the 
+      browser process, and the file is rendered in the browser window. We 
+      haven't figured out how to attach the <B>/n</B> option to the command, so 
+      bad things happen. Fortunately, you can configure Adobe Reader to open in 
+      a separate process. 
+      <UL class=style1>
+        <LI>Open <B>Adobe Reader</B> from the <B>Start</B> menu. 
+        <LI>Select <B>Edit</B> and <B>Preferences</B>. 
+        <LI>Select <B>Internet</B> from the list of <B>Categories</B>. 
+        <LI>Uncheck the box labeled <B>Open PDF in browser window</B>. 
+        <LI>Click <B>OK</B> and close Adobe Reader. </LI></UL><SPAN 
+      class=style1>Now, when you click on a link in your browser to open a PDF, 
+      you'll get a new window containing the document. If the document doesn't 
+      open, and you're using Firefox, then you probably have Adobe Reader 
+      running. If there are no visible windows for Reader, you may have to kill 
+      the process <B>AcroRd32.exe</B> from the <B>Task Manager</B>. 
+      <H4 class=style1>Blowfish:</H4><SPAN class=style1>Blowfish is an open 
+      source implementation of Bruce Schneier's Blowfish encryption algorithm. 
+      Unlike many applications, Blowfish needs read/write access to the folder 
+      containing its executable. Check the appropriate box under the 
+      <B>Endowments</B> options. </SPAN>
+      <H4 class=style1>Browsers:</H4>
+      <P class=style1>Should your browser Pet get corrupted by a malicious web 
+      site, you can recover by simply repolarizing. Sometimes you can only 
+      recover by repolarizing from scratch. That means you'll lose any bookmarks 
+      you've set only in the browser Pet. 
+      <P class=style1>The simple answer would seem to be sharing the bookmarks 
+      with your unpolarized browser. That's not wise. Surprisingly, there are 
+      <EM>dangerous</EM> bookmarks. Some malicious sites install them in your 
+      list of bookmarks. That means it isn't safe to share bookmarks between 
+      polarized and unpolarized versions of your browser. Instead, we recommend 
+      setting bookmarks in your unpolarized browser for only trusted sites. 
+      <P class=style1>One upshot of not sharing bookmarks is that you'll need to 
+      save the bookmarks in your Pet. When updating your bookmarks, you should 
+      export them to a convenient place, such as your Desktop. Then, should you 
+      have to repolarize from scratch, you can just import them. You should do 
+      virus and spyware scans on the file first, though, in case it has one of 
+      those bad bookmarks. You should NEVER copy your Pet's bookmarks to your 
+      unpolarized browser. Copy individual bookmarks, instead. 
+      <H4 class=style1>Internet Explorer (and perhaps other browsers):</H4><SPAN 
+      class=style1>Your browser can use your digital certificates. 
+      Unfortunately, this Beta release does not copy them for you when you 
+      polarize Internet Explorer. You will need to open the unsafe browser, 
+      export your certificates and import them to each browser Pet. <EM>NB: We 
+      are unable to add certificates to your personal set. We believe that 
+      happens because the browser is not running with the identity in your 
+      certificate, but we're not sure.</EM> 
+      <H4 class=style1>Microsoft Office Suite:</H4><SPAN class=style1>Microsoft 
+      invested considerable time and money developing an extremely powerful 
+      macro language. Unfortunately, attackers can use the power of these macros 
+      to damage your machine or steal your secrets. Many installations protect 
+      you by setting the security level to keep macros from running. Since 
+      you're using Polaris, you're far less vulnerable. In order to run macros, 
+      open the polarized version of the application, select 
+      <B>Tools/Macro/Security</B> and click the radio button for <B>Low</B>. The 
+      accompanying text says that this setting isn't recommended, but that 
+      warning doesn't apply to Polarized applications. </SPAN>
+      <H4 class=style1>Outlook:</H4>
+      <P class=style1>If you're like most users, you can't do your job without 
+      reliable access to your email. That's why most users don't Polarize 
+      Outlook. However, if you're brave and paranoid, you may want to. It's not 
+      a bad idea. Some viruses launch even if you preview an email. Since your 
+      email is so important, you'll probably want to be able to switch back to 
+      the unpolarized version if something goes wrong. So, before you polarize 
+      Outlook you should record the Outlook settings you are using. 
+      Unfortunately, you can only have one instance of Outlook running at a 
+      time. That means you'll have to copy your settings manually in order to 
+      set up your Outlook Pet. 
+      <P class=style1>Select <B>E-mail Accounts</B> from the <B>Tools</B> menu 
+      in Outlook. Under <B>E-mail</B> in the window that pops up, click <B>View 
+      or change existing e-mail accounts</B>, and click <B>Next</B>. Select the 
+      email account marked <B>Default</B>, and click <B>Change...</B>. Write 
+      down the name of your exchange server and user name. Note if the <B>Use 
+      Cached Exchange Mode</B> button is clicked. It's probably a good idea to 
+      click it, since it makes switching between the Polarized and unpolarized 
+      Outlooks easier. Finally, click on <B>More Settings ...</B> and make a 
+      note of everything you see on all the tabs and menus. 
+      <P class=style1>Polarize Outlook. Make sure that you've selected it as 
+      your default mail client in the <B>Endowments</B> window. If you don't 
+      want to have to type your login password every time you start your Outlook 
+      Pet, add the Exchange server to the list of server sites to automatically 
+      authenticate. The first time you open the Outlook Pet, you'll be taken to 
+      the <B>E-mail Accounts</B> window. Simply step through the various windows 
+      and tabs making sure your settings match those of your unpolarized 
+      Outlook. The most important one is the <B>Offline Folder File Settings 
+      ...</B> under the <B>Advanced</B> tab. You'll see the path to the cache 
+      file. Replace the Pet's user name in that path with yours. If you do, 
+      there will be no delay needed to refresh the cache when you switch between 
+      unpolarized Outlook and your Outlook Pet. 
+      <P class=style1><A class=style2 
+      href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#contents">Back 
+      to Table of Contents</A> </P>
+      <H3 class=style1><A name=troubleshooting>Troubleshooting</A></H3><SPAN 
+      class=style1>
+      <P class=style1>This section lists some common problems and what to do 
+      about them. 
+      <H4 class=style1>Slow Start-up</H4>
+      <P class=style1>Your Pet will take a few additional secconds to start the 
+      first time you use a Pet after a reboot or when the Pet hasn't been used 
+      for a long time. Don't panic. Windows has to load the Pet's account 
+      information into the registry. Microsoft didn't optimize that path because 
+      they assumed it would only be needed at login. Once the registry 
+      information is loaded, your application will start without any additional 
+      delay. We have seen cases where the start-up takes 30 seconds or so. 
+      Usually that's because a disk intensive application, such as a virus scan, 
+      is running. Be patient. After the first time, your Pet will launch 
+      normally. 
+      <H4 class=style1>Failure to start</H4>
+      <P class=style1>Nothing may happen when you try to launch a pet. The most 
+      common cause is that the PowerWindow isn't running. If it is running, try 
+      again. That sometimes works. If trying again doesn't work, the PowerWindow 
+      may be stuck. Close all Pets, restart the PowerWindow, and try again. 
+      <P class=style1>Firefox and Adobe Reader may fail to start for a different 
+      reason. They try to use a running instance, even if that instance is 
+      running in a different user account. Your Firefox Pet won't open if you 
+      have Firefox running in your account. Firefox won't open in your account 
+      if you have a Firefox Pet running. If Adobe Reader is running in your 
+      account, it won't open a PDF from Firefox. There will also be problems 
+      opening PDFs from your browser unless you've <A 
+      href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#adobe">configured 
+      Adobe Reader properly</A>. 
+      <H4 class=style1>Polaris Not Responding</H4>
+      <P class=style1>If you can't launch a new Pet, or if Polaris functions, 
+      such as the PowerWindow file dialog box or the Pet names on title bars, 
+      don't seem to be working, the PowerWindow may have died or be stuck. You 
+      can verify the problem using the Windows task manager. 
+      <UL class=style1>
+        <LI>Start the task manager: <B>CTL-ALT-DEL</B> followed by <B>T</B>. 
+        <LI>Select the <B>Processes</B> tab. 
+        <LI>If you don't see <B>powerwindow.exe</B>, you have the problem. If 
+        you do see it, continue. 
+        <LI>There should be a column labeled <B>CPU</B>. If this column doesn't 
+        appear, then 
+        <UL class=style1>
+          <LI>On the <B>View</B> menu, click on <B>Select Columns</B>. 
+          <LI>Check the box next to <B>CPU</B>. 
+          <LI>Click <B>OK</B> </LI></UL>
+        <LI>The program <B>powerwindow.exe</B> should be using a few percent of 
+        the CPU. If it is using 0%, you have the problem. </LI></UL>
+      <P class=style1>If you have the problem, 
+      <UL class=style1>
+        <LI>Kill the process running <B>powerwindow.exe</B> if necessary. 
+        <LI>Close all Pets. 
+        <LI>Restart the PowerWindow. </LI></UL>
+      <H4 class=style1>Application doesn't respond after file operation</H4>
+      <P class=style1>There are times when your application will stop responding 
+      after a file operation, such as <B>Open</B> or <B>Save As</B>. It may be 
+      that your file dialog box is under some other window or that it's on an 
+      alternate screen if you use more than one monitor. Sometimes clicking on 
+      the icon for your pet in the task bar makes the dialog box visible. If 
+      that doesn't work, you can minimize windows to see if the dialog box is 
+      under one of them. If that doesn't work, simply hitting <B>ESC</B> will 
+      clear up the problem. You can then try opening the file dialog box 
+      again.</P>
+      <H4 class=style1>Lost Changes to a File</H4>
+      <P class=style1>If something goes wrong, the updates you're making in the 
+      Pet may not appear in the file you opened. The most common reason is that 
+      you closed the PowerWindow while a Pet was open. If you suspect that may 
+      have happened, look in the folder <B>PolarisRecover</B> on your Desktop. 
+      Any changes you made up to the last Save or SaveAs will be in the file in 
+      that folder. If there's no file, then the all the changes up to your last 
+      Save or SaveAs are reflected in the orginal file. Perhaps you should 
+      consider saving more frequently. 
+      <H4 class=style1>Blue Screen of Death</H4>
+      <P class=style1>The only reports we have of this behavior is when coming 
+      out of <B>Suspend</B> mode on a machine with VMWare installed. The problem 
+      occurs even when no virtual machine is running. Uninstalling VMWare 
+      appears to fix the problem. An alternative is to avoid suspending your 
+      machine by hibernating or shutting down. 
+      <H4 class=style1>Pets Disappear</H4>
+      <P class=style1>One user reported that Pets disappeared seemingly at 
+      random times. We identified the problem as being due to the desktop 
+      management software being used. The tool gives the user multiple virtual 
+      desktops. However, since the tool runs on early versions of Windows, it 
+      doesn't use the Windows Desktop introduced in Windows 2000. Instead, it 
+      opens and closes windows to give the appearance of separate desktops. The 
+      problem is that Polaris assumes a process running in a Pet that has no 
+      visible windows has been started by a virus and kills it. The solution is 
+      to configure your desktop management software so that your Pets appear on 
+      all virtual desktops. Alternatively, you can tell Polaris not to close the 
+      Pet when no windows are visible by setting the endowment when you 
+      Polarize. Don't forget that every file you open is available to the Pet 
+      until you tell Polaris to close it. 
+      <H4 class=style1>File Dialog Box Pulldown Points to Wrong Place</H4>
+      <P class=style1>File dialog boxes have buttons along the left side and a 
+      pulldown menu at the top. The <B>Desktop</B> entry at the top of the 
+      pulldown points to the Pet account, not yours. You can navigate to your 
+      own area by using the pulldown to navigate to <B>c:\Documents and 
+      Settings\alice</B>, if your userid is <B>alice</B>. You'll see entries for 
+      <B>Desktop</B> and <B>alice's Documents</B>. Alternatively, you can use 
+      the buttons on the left. They point to your folders, not the Pet's. 
+      <H4 class=style1>Text in File Dialog Box is Offset</H4>
+      <P class=style1>If you can't see the all fields in the PowerWindow's file 
+      dialog box, or the window is all gray, you can simply type the fully 
+      qualified pathname of the file. Otherwise, just close the dialog box and 
+      try again. The offset occurs rarely, so you should be fine after one more 
+      try. 
+      <H4 class=style1>Application Doesn't Use Standard File Dialog</H4>
+      <P class=style1>Some applications, particularly those ported from Unix or 
+      that you've written yourself, don't use standard file dialog boxes. A 
+      common example is Java applications written with the Swing library, those 
+      with the funny looking flat buttons. You won't be able to open any files 
+      other than at launch time because the Pet won't have the permission to 
+      read them. If you do need access, you can manually copy the file or files 
+      to the Pet account's area. However, you won't have synchronizers for these 
+      files. Also, these files will be deleted shortly after the last instance 
+      of the Pet is closed. 
+      <H4 class=style1>Failure to open file</H4>
+      <P class=style1>The file you designated doesn't open. Trying again almost 
+      always works.</P>
+      <H4 class=style1>Inability to print</H4>
+      <P class=style1>Some enterprises use authenticating network print servers, 
+      which don't recognize your Pets. The solution is to either set up Network 
+      Authentication on the Polarizer or bypass the print server. To set up a 
+      network printer for direct printing </P>
+      <UL class=style1>
+        <LI>Look at the printer to find its manufacturer and model number. 
+        <LI>Look at the network, or speak to a network administrator, to learn 
+        the printer's name or IP address or domain name. An example in HP Labs 
+        is vega04.hpl.hp.com. 
+        <LI>Select <B>ControlPanel/Printers and Faxes/</B> and <B>Add 
+        Printer</B>. 
+        <LI>Select <B>Local Printer</B>. Do not select <B>Network Printer</B>, 
+        even though, technically, the printer is on the network. 
+        <LI>Select <B>Create New Port</B>. Set the <B>Type of Port</B> to 
+        <B>Standard TCP/IP</B> Port. 
+        <LI>Type in the printer name or IP address. 
+        <LI>Specify the printer model number. Allow the printer wizard to 
+        complete construction of the new printer. </LI></UL>Once your printer is 
+      installed, you need to configure a separator page. The generic separator 
+      pages will use the account name of your Pet. You can customize your page 
+      to use your account name, your full name, or anything else you like, as 
+      long as you can print it in a family newspaper. 
+      <UL class=style1>
+        <LI>Copy <B>c:/windows/system32/sysprint.sep</B> to a safe location, 
+        such as <B>c:/myseparator.sep</B>. 
+        <LI>About 15 lines down, there is a line containing the string 
+        <B>(@N@L)</B>. 
+        <LI>Replace the text between the parentheses with whatever you'd like to 
+        appear on the separator page, but don't make the line too long. 
+        <LI>Further down the page, you'll see a line referring to the server 
+        name and another with the string <B>PSCRIPT Page Separator</B>. You may 
+        replace the text between the parentheses on these lines. Ours say 
+        <B>Polabears do it</B> in place of the first and <B>with least 
+        authority</B> in place of the second. It's important to keep the line 
+        shorter than 72 characters. </LI></UL>Now configure your printer to use 
+      your separator page. 
+      <UL class=style1>
+        <LI>Open <B>Printers and Faxes</B> and highlight your printer. 
+        <LI>Select <B>Set printer properties</B>. 
+        <LI>Select <B>Advanced</B> and click <B>Separator Page...</B>. 
+        <LI>Select a <B>.sep</B> file and click <B>Open</B>. 
+        <LI>Click <B>OK</B> twice. </LI></UL>
+      <H4 class=style1>"Uncaught Exception" dialog&nbsp; box<BR></H4>
+      <P class=style1>If you get an uncaught exception, click the Continue 
+      button. Often you will be able to continue operations unimpaired. If 
+      instead of clicking the Continue button you click the Break button, the 
+      Polaris PowerWindow will be shut down, and files that you are currently 
+      editing will no longer be properly saved. Simply restarting the 
+      PowerWindow will not fix the problem. Shut down all the polarized 
+      applications, restart the PowerWindow using the shortcut in your <B>Start 
+      Up</B> folder, and reload the documents.<BR>
+      <H4 class=style1>Pet headers no longer appear<BR></H4>
+      <P class=style1>If new windows no longer have a <B>&lt;&lt;xxx&gt;&gt;</B> 
+      notation as the prefix on the title bar, your PowerWindow has shut down or 
+      is stuck. Close the PowerWindow and all running Pets, and relaunch the 
+      PowerWindow using the shortcut in your <B>Start Up</B> folder. 
+      <H4 class=style1>WinZip in a Pet</H4>
+      <P class=style1>By default, WinZip tries to open in a currently open 
+      WinZip window. If WinZip was opened in a Pet, opening another zip file 
+      with your permissions will fail. The problem is that the unconfined WinZip 
+      sees the existing window and tries to use it. Unbeknownst to WinZip, that 
+      window is running in a Pet and doesn't have permission to read the zip 
+      file. To fix this problem, 
+      <UL class=style1>
+        <LI>Close any instances of WinZip running in Pets. 
+        <LI>Open WinZip from the <B>Start</B> button to ensure that it is 
+        running with your permissions. 
+        <LI>Under <B>Options</B> uncheck <B>Reuse WinZip windows</B>. 
+      </LI></UL><SPAN class=style1>You don't need to repeat this process for 
+      your Pets. Polaris protects you from the <A 
+      href="http://security.tombom.co.uk/shatter.html">Shatter Attack</A> by 
+      restricting the access a Pet has to windows not associated with that Pet. 
+      That protection also means that WinZip running in a Pet can't see windows 
+      opened by WinZip not running in that Pet. 
+      <P class=style1>There's another problem if WinZip opens in a Pet. Since 
+      WinZip uses non-standard dialog boxes, you won't be able to extract files 
+      to a location outside the Pet account with this Beta release. You should 
+      open the zip file with WinZip running with your permissions. 
+      Alternatively, you can extract the files to a folder in the Pet account, 
+      which you can find under <B>c:\Documents and Settings\xxx\</B>, where 
+      <B>xxx</B> is the account name used for your Pet. 
+      <P><A class=style2 
+      href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#contents">Back 
+      to Table of Contents</A> </P>
+      <H3 class=style1><A name=limitations>Limitations</A></H3>
+      <P class=style1>The most important limitation of Polaris is that it only 
+      works with Windows XP Professional with Service Pack 2. There is no 
+      theoretical reason it should not work with Service Pack 1, Home Edition, 
+      or even Windows 2000. However, there are minor differences that cause 
+      problems. Try Polaris at your own risk on other versions of Windows. 
+      <P class=style1>There are a number of applications that you should not 
+      Polarize because they don't work when confined. These are the ones we know 
+      of.</P>
+      <UL class=style1>
+        <LI><B>Direct 3D applications</B>: Direct 3D is incompatible with the 
+        security machinery inside Polaris. Hence, over half of all game software 
+        is incompatible. 
+        <LI><B>Cygwin</B>: The Cygwin command shell, which attempts to emulate a 
+        Unix bash shell on Windows, modifies access control lists in a manner 
+        that is incompatible with Polaris. Not only should Cygwin not be 
+        Polarized, we recommend against running Cygwin on a Polarized machine. 
+        In particular, using the Cygwin <B>cp</B> command leads to conflict with 
+        Polaris operations. 
+        <LI><B>PGP</B>: PGP will not run Polarized. </LI></UL><SPAN 
+      class=style1>There are a number of issues that we have not attempted to 
+      address in this Beta release. </SPAN>
+      <UL class=style1>
+        <LI>Polaris does not block Pets from accessing the network. 
+        <LI>If a virus directly attacks Outlook rather than simply being an 
+        email attachment, e.g., a malicious ActiveX control in an HTML mail, the 
+        contacts list is available to the virus. 
+        <LI>You can not use drag/drop to a Pet. There are many places where 
+        Windows ignores the distinction of user accounts; this one it observes. 
+        <LI>If the server for your network drives does not authenticate, Polaris 
+        will not be able to limit your Pets' access to them. </LI></UL>
+      <UL></UL>
+      <P><A class=style2 
+      href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#contents">Back 
+      to Table of Contents</A> </P>
+      <H3 class=style1><A name=upgrading>Upgrading from the Alpha</A></H3>
+      <P class=style1>The Alpha version of Polaris has proven to be surprisingly 
+      stable and effective at blocking the current crop of viruses. 
+      Unfortunately, the Alpha version is vulnerable to a very simple attack 
+      that isn't necessary if people aren't using Polaris. Once Polaris is in 
+      widespread use, we can expect to see this attack appear. Moving to the 
+      Polaris Beta will protect you. 
+      <P class=style1>On Windows, any process can send a Windows message to any 
+      other window on the desktop. These messages tell the recipient process to 
+      do such things as type characters, open files, and run commands. Microsoft 
+      states that all programs running on a desktop are assumed to have the same 
+      privileges. That's true on a standard desktop, but not with Polaris. 
+      Hence, a virus running in a program on a standard desktop can do anything 
+      the user can do, up to and including erasing all the user's files. A virus 
+      running in a Pet can't. However, it can send a Windows message to the 
+      <B>Start</B> button telling it to select <B>Run</B> and execute <B>erase 
+      *.*</B>. 
+      <P class=style1>The Polaris Beta adds an additional restriction to 
+      programs running in Pets. They can only send Windows messages to other 
+      windows associated with that same Pet. A virus running in a Pet can't even 
+      find out that the <B>Start</B> button exists. 
+      <P class=style1>Unfortunately, upgrading to the Beta isn't simple because 
+      the Alpha doesn't have an <B>Uninstall</B> utility. That means a lot of 
+      manual work is required. If you're about to get a new machine, you might 
+      want to keep the Alpha release on your current machine and install the 
+      Beta on the new one. On the other hand, having the Alpha version on your 
+      machine won't interfere with your use of the Beta. After glancing through 
+      the instructions for removing the Alpha, you might just decide to leave it 
+      installed. 
+      <P class=style1>If you want to leave the Alpha on your machine, then 
+      follow the first five steps. If you want to remove all vestiges of the 
+      Alpha, then do all of them. Read the instructions carefully. Because of 
+      the way the browser wraps text at the end of the line, some filenames end 
+      up split between two lines. Make sure you don't delete a folder when you 
+      should have deleted a single file. 
+      <OL class=style1>
+        <LI>Record the names of all your Pets. 
+        <LI>Kill the <B>powerbox.exe</B> process. 
+        <UL>
+          <LI>Select the <B>Processes</B> tab in the Task Manager. 
+          <LI>Find <B>powerbox.exe</B> and click <B>End Process</B>. 
+          <LI>Click <B>Yes</B> in the dialog box that opens. </LI></UL>
+        <LI>Delete <B>c:\Documents and Settings\alice\Start Menu\Programs\Start 
+        Menu\powerbox.exe</B>, after substituting your userid for <B>alice</B>. 
+        <LI>Remove the Polarizer shortcut from your desktop. 
+        <LI>Delete any Pet shortcuts. 
+        <LI>Reboot. Sorry about that, but some folders can't be deleted unless 
+        you do. 
+        <LI>Unpolarize all existing Pets using the <B>De-polarize</B> button on 
+        the Polarizer. 
+        <LI>Verify that the Pets have been removed by typing <B>net users</B> in 
+        a command window. You'll remove any that are left in the next step. 
+        <LI>Delete the <B>boxedAcct</B> account and any accounts missed by the 
+        de-polarizer. 
+        <UL class=style1>
+          <LI>From <B>Start</B> select <B>Control Panel</B>. 
+          <LI>Double click on <B>User Accounts</B>. 
+          <LI>Highlight the entry <B>boxedAcct</B> and click <B>Remove</B>. 
+          <LI>Repeat for any other Pet accounts you see. Their account names end 
+          with the string <B>Acct</B>. Just be sure you don't inadvertently 
+          delete an account unrelated to Polaris. </LI></UL>
+        <LI>Remove the <B>OpenSafe</B> option. 
+        <UL class=style1>
+          <LI>From the file explorer select <B>Tools</B> and <B>Folder 
+          Options</B>. 
+          <LI>Click on the <B>File Types</B> tab. 
+          <LI>For each filetype you associated with a Pet, 
+          <UL class=style1>
+            <LI>Highlight the filetype, and click <B>Advanced</B>. If the 
+            <B>Advanced</B> button doesn't show up, you don't have to do 
+            anything for this filetype. 
+            <LI>Highlight <B>OpenSafe</B>, and click <B>Remove</B>. 
+            <LI>Highlight <B>Open</B>, and click <B>Set Default</B>. 
+          </LI></UL></LI></UL>
+        <LI>Remove two registry entries. 
+        <UL>
+          <LI>Select <B>Start</B>, <B>Run</B>, enter <B>regedit</B>, and click 
+          <B>OK</B>. 
+          <LI>In the registry editor, navigate to <B>My 
+          Computer\HKEY_CLASSES_ROOT\*\shell\Polaris Send To Pet</B>. 
+          <LI>In the left panel, right click on this entry and select 
+          <B>Delete</B>. 
+          <LI>Click <B>OK</B>. 
+          <LI>Navigate to <B>My 
+          Computer\HKEY_LOCAL_MACHINE\software\Hewlett-Packard\polaris</B>. 
+          <LI>In the left panel, right click on this entry and select 
+          <B>Delete</B>. 
+          <LI>Click <B>OK</B>. </LI></UL>
+        <LI>Delete the following folders 
+        <UL>
+          <LI><B>c:\confinedrequests</B> 
+          <LI><B>c:\Documents and Settings\alice\appdirs</B>, after substituting 
+          your userid for <B>alice</B>. Do NOT remove <B>Application Data</B>. 
+          <LI><B>c:\Documents and Settings\xxxAcct</B>, where <B>xxx</B> is the 
+          name of a former Pet. You may get a scary message about deleting a 
+          system or read-only file. If you do, click <B>Yes to All</B>. 
+          <LI><B>c:\print</B> 
+          <LI><B>c:\runsafe</B> </LI></UL>
+        <LI>You are now ready to <A 
+        href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#install">install 
+        the Beta</A>. </LI></OL>
+      <P><A class=style2 
+      href="http://web.hpl.hp.com/personal/akarp/Polaris%20User's%20Guide%20Beta.htm#contents">Back 
+      to Table of Contents</A> 
+  </P></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></TD></TR></TBODY></TABLE></BODY></HTML>

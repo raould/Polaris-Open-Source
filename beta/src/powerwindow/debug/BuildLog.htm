@@ -1,0 +1,119 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: powerwindow, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\powerwindow\Debug\RSP000028.rsp" with contents
+[
+/Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_UNICODE" /D "UNICODE" /Gm /EHsc /RTC1 /MTd /Yu"stdafx.h" /Fp"Debug/powerwindow.pch" /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /ZI /TP
+".\WindowWatcher.cpp"
+".\TaskQueue.cpp"
+".\ShellHandler.cpp"
+".\ProcessWatcher.cpp"
+".\powerwindow.cpp"
+".\PingHandler.cpp"
+".\OpenURLHandler.cpp"
+".\OpenStrictHandler.cpp"
+".\OpenPetURLHandler.cpp"
+".\OpenPetStrictHandler.cpp"
+".\MessageDispatcher.cpp"
+".\MAPISendMailHandler.cpp"
+".\LaunchHandler.cpp"
+".\GetFileNameWHandler.cpp"
+".\GetFileNameAHandler.cpp"
+".\GetClipboardDataHandler.cpp"
+".\FixAndClean.cpp"
+".\FileDialogWatcher.cpp"
+".\EventThread.cpp"
+".\EchoHandler.cpp"
+".\ActiveWorld.cpp"
+".\ActivePet.cpp"
+]
+Creating command line "cl.exe @"c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\powerwindow\Debug\RSP000028.rsp" /nologo"
+Creating temporary file "c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\powerwindow\Debug\RSP000029.rsp" with contents
+[
+/Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_UNICODE" /D "UNICODE" /Gm /EHsc /RTC1 /MTd /Yc"stdafx.h" /Fp"Debug/powerwindow.pch" /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /ZI /TP
+".\stdafx.cpp"
+]
+Creating command line "cl.exe @"c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\powerwindow\Debug\RSP000029.rsp" /nologo"
+Creating command line "rc.exe /d "_UNICODE" /d "UNICODE" /fo"Debug/powerwindow.res" ".\powerwindow.rc""
+Creating temporary file "c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\powerwindow\Debug\RSP00002A.rsp" with contents
+[
+/OUT:"../../dist/powerwindow.exe" /INCREMENTAL /NOLOGO /DEBUG /PDB:"Debug/powerwindow.pdb" /SUBSYSTEM:WINDOWS /MACHINE:X86 shlwapi.lib psapi.lib crypt32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ".\Debug\pethooks.lib" "\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\polaris\Debug\polaris.lib"
+".\debug\ActivePet.obj"
+".\debug\ActiveWorld.obj"
+".\debug\EchoHandler.obj"
+".\debug\EventThread.obj"
+".\debug\FileDialogWatcher.obj"
+".\debug\FixAndClean.obj"
+".\debug\GetClipboardDataHandler.obj"
+".\debug\GetFileNameAHandler.obj"
+".\debug\GetFileNameWHandler.obj"
+".\debug\LaunchHandler.obj"
+".\debug\MAPISendMailHandler.obj"
+".\debug\MessageDispatcher.obj"
+".\debug\OpenPetStrictHandler.obj"
+".\debug\OpenPetURLHandler.obj"
+".\debug\OpenStrictHandler.obj"
+".\debug\OpenURLHandler.obj"
+".\debug\PingHandler.obj"
+".\debug\powerwindow.obj"
+".\debug\ProcessWatcher.obj"
+".\debug\ShellHandler.obj"
+".\debug\stdafx.obj"
+".\debug\TaskQueue.obj"
+".\debug\WindowWatcher.obj"
+".\debug\powerwindow.res"
+]
+Creating command line "link.exe @"c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\powerwindow\Debug\RSP00002A.rsp""
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+stdafx.cpp
+Compiling...
+WindowWatcher.cpp
+TaskQueue.cpp
+ShellHandler.cpp
+ProcessWatcher.cpp
+powerwindow.cpp
+c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\powerwindow\powerwindow.cpp(377) : warning C4018: '<' : signed/unsigned mismatch
+PingHandler.cpp
+OpenURLHandler.cpp
+OpenStrictHandler.cpp
+OpenPetURLHandler.cpp
+OpenPetStrictHandler.cpp
+MessageDispatcher.cpp
+MAPISendMailHandler.cpp
+LaunchHandler.cpp
+GetFileNameWHandler.cpp
+GetFileNameAHandler.cpp
+GetClipboardDataHandler.cpp
+FixAndClean.cpp
+FileDialogWatcher.cpp
+c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\pethooks\filedialog.h(11) : warning C4200: nonstandard extension used : zero-sized array in struct/union
+        Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\powerwindow\FileDialogWatcher.cpp(155) : warning C4244: '=' : conversion from 'double' to 'LONGLONG', possible loss of data
+EventThread.cpp
+EchoHandler.cpp
+Generating Code...
+Compiling...
+ActiveWorld.cpp
+ActivePet.cpp
+Generating Code...
+Compiling resources...
+Linking...
+LINK : LNK6004: ../../dist/powerwindow.exe not found or not built by the last incremental link; performing full link
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\Documents and Settings\marcstgr\My Documents\Visual Studio Projects\beta\src\powerwindow\Debug\BuildLog.htm"
+powerwindow - 0 error(s), 3 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

@@ -1,0 +1,430 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Polarizer3.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About Polarizer3"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            128,IDC_STATIC,11,17,20,20
+    LTEXT           "Polarizer3 Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_POLARIZER3_DIALOG DIALOGEX 0, 0, 389, 223
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Polarizer3"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Polarize",IDC_BUTTON1,21,186,45,15
+    EDITTEXT        IDC_EDIT1,78,22,93,13,ES_AUTOHSCROLL
+    LTEXT           "Petname (Excel, MSWord, etc.)",IDC_STATIC,19,22,56,17
+    EDITTEXT        IDC_EDIT2,78,101,153,15,ES_AUTOHSCROLL
+    LTEXT           "Path to Executable",IDC_STATIC,19,103,39,15
+    EDITTEXT        IDC_EDIT3,78,49,41,35,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "File extensions",IDC_STATIC,19,62,48,16
+    PUSHBUTTON      "Browse For Executable",IDC_BUTTON2,78,122,81,15
+    PUSHBUTTON      "Configure Network Authentication",IDC_BUTTON3,304,7,78,
+                    20,BS_MULTILINE
+    CTEXT           "Existing Pets",IDC_STATIC,293,38,61,12
+    LISTBOX         IDC_LIST1,274,50,99,60,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Pet Templates for Known Applications",IDC_STATIC,283,
+                    128,80,18
+    LISTBOX         IDC_LIST2,273,148,96,60,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,249,7,8,209
+    LTEXT           "Endowments",IDC_STATIC,19,156,45,12
+    PUSHBUTTON      "Configure",IDC_BUTTON4,77,154,71,13
+    PUSHBUTTON      "De-Polarize",IDC_BUTTON5,179,186,43,15
+    PUSHBUTTON      "Update Existing Pet Endowments",IDC_BUTTON6,90,186,66,
+                    20,BS_MULTILINE
+    PUSHBUTTON      "Open Pet Desktop",IDC_BUTTON7,184,22,64,14
+END
+
+IDD_PolarizationComplete DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Polarization Complete"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Continue",IDOK,129,7,50,14
+    PUSHBUTTON      "Exit Polarizer",IDCANCEL,129,24,50,14
+    LTEXT           "Polarization Complete. Click Continue to Polarize More Applications",
+                    IDC_STATIC,27,17,91,48
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 233, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Configure Network Authentication"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Set Authentication",IDOK,7,149,74,14
+    PUSHBUTTON      "Cancel",IDCANCEL,176,149,50,14
+    CONTROL         "No Authentication",IDC_RADIO1,"Button",
+                    BS_AUTORADIOBUTTON,22,14,73,10
+    CONTROL         "Store Password",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,
+                    21,36,66,10
+    EDITTEXT        IDC_EDIT1,46,50,137,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "New authentication settings will be configured after all polarized applications are shut down",
+                    IDC_STATIC,26,112,163,17
+    EDITTEXT        IDC_EDIT2,46,84,137,13,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Re-Enter Password:",IDC_STATIC,37,70,79,10
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "De-Polarization Complete"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Continue",IDOK,129,7,50,14
+    PUSHBUTTON      "Exit Polarizer",IDCANCEL,129,24,50,14
+    LTEXT           "De-Polarization Complete. Click Continue to Polarize or De-Polaris more Applications",
+                    IDC_STATIC,19,7,98,44
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 305, 134
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Polarizing Existing Pet"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Polarize From Scratch (Lowest Risk)",IDOK,7,99,78,28,
+                    BS_MULTILINE
+    PUSHBUTTON      "Cancel (go back and rename the Pet you were creating)",
+                    IDCANCEL,215,97,83,30,BS_MULTILINE
+    LTEXT           "You have chosen to Polarize a Pet that has already been Polarized. Do you wish to:",
+                    IDC_STATIC,7,7,291,51
+    PUSHBUTTON      "Re-Polarize (Medium Risk)",IDC_BUTTON1,112,99,75,28,
+                    BS_MULTILINE
+    LTEXT           "- Polarize from scratch (no risk of carrying a viral infection forward to the new Pet)",
+                    IDC_STATIC,17,21,281,9
+    LTEXT           "- Re-Polarize (carry your Favorites/Bookmarks  and your registry settings forward, medium risk of carrying an infection forward)",
+                    IDC_STATIC,16,33,268,18
+    LTEXT           "- Go back and change the name of this Pet (because you didn't intend to replace an already Polarized Pet)",
+                    IDC_STATIC,16,56,273,17
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Cannot Polarize Active Pet"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,65,68,51,15
+    LTEXT           "The Petname you have chosen belongs to a Pet that is currently active. Shut down the Pet if you wish to polarize again with that petname.",
+                    IDC_STATIC,7,7,172,40
+END
+
+IDD_DIALOG5 DIALOGEX 0, 0, 343, 350
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Endowments"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,6,329,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,282,329,50,14
+    LTEXT           "Server Sites to Automatically Authenticate",IDC_STATIC,
+                    6,20,92,18
+    LTEXT           "Additional Applications to run in this Pet",IDC_STATIC,
+                    6,65,95,15
+    EDITTEXT        IDC_EDIT2,117,62,196,30,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Read-Only: Folders for which this pet should have permanent read-only authority (cannot be on network drives)",
+                    IDC_STATIC,6,101,98,41
+    CONTROL         "Read Only With Links (like a web browser, must be able to read all documents in the folder subtree of the selected document)",
+                    IDC_CHECK1,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,12,264,157,26
+    CONTROL         "Allow Read/Write of Windows Temp folders",IDC_CHECK2,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,12,
+                    238,96,18
+    CONTROL         "Allow editing the application executable folder",
+                    IDC_CHECK3,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,172,240,115,15
+    CONTROL         "Set as Default Web Browser",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,219,105,10
+    LTEXT           "Read/Write: Folders for which this pet should have permanent read/write authority (cannot be on network drives)",
+                    IDC_STATIC,6,151,98,41
+    EDITTEXT        IDC_EDIT4,115,106,196,33,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT1,117,23,196,31,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT3,115,155,196,33,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "Set as Default Mail Client",IDC_CHECK5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,172,217,95,10
+    LTEXT           "Command Line Arguments:",IDC_STATIC,15,199,91,9
+    EDITTEXT        IDC_EDIT5,114,197,196,12,ES_AUTOHSCROLL
+    CONTROL         "Grant Full Network Credentials",IDC_CHECK6,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,300,115,10
+    CONTROL         "Do Not Shut Down App When Windows All Closed",
+                    IDC_CHECK7,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,172,295,135,19
+END
+
+IDD_DIALOG6 DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "No Executable"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    LTEXT           "The specified executable does not exist",IDC_STATIC,7,9,
+                    103,56
+END
+
+IDD_DIALOG7 DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Important Error Logged"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    LTEXT           "An important error has been logged. Please forward your log to your Polaris support person",
+                    IDC_STATIC,7,7,105,35
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Polarizer3.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Polarizer3.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_POLARIZER3_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 382
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_PolarizationComplete, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 332
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 343
+    END
+
+    IDD_DIALOG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DIALOG7, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "res\\pola.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Polarizer3..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Polarizer3.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
