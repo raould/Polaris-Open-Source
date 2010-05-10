@@ -1,2 +1,10 @@
 Polaris is a Microsoft Windows system for running application software with limited authority.
 See http://en.wikipedia.org/wiki/HP_Polaris_%28computer_security%29
+
+*** The code here is a proof of concept. It was never intended to be more than
+a research prototype built to show that we could run applications with
+reduced authority with only minimal impact on the user experience. The
+code has to be reviewed, tested and probably rewritten before being
+deployed to a wider user base. That being said, as many as 100 users have
+run a wide variety of applications under Polaris, and several have
+reported being saved from virus attacks. ***
